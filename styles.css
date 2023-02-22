@@ -1,0 +1,60 @@
+nav{
+    transition: 0.3s ease-in-out;
+}
+
+nav.scrolled {
+    background-color: rgb(116, 160, 218);
+    transition: background-color 0.3s ease-in-out;
+  }
+.c-item{
+   height: 80vh;
+
+}
+.c-img{
+    height: 100%;
+    object-fit:cover;
+    filter: brightness(0.6);
+}
+#icons{
+    padding-top: 12px;
+    background: rgb(245, 245, 245)
+}
+.bi.bi-heart-fill.display-5{
+
+background-color: rgb(230, 159, 212);
+height: 200px;
+width: 200px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 50%;
+}
+.bi.bi-building.display-5{
+    background-color: rgb(161, 236, 174);
+    height: 200px;
+    width: 200px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    }
+.bi.bi-airplane-fill.display-5{
+    background-color: rgb(156, 211, 224);
+    height: 200px;
+    width: 200px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+}
+#cards{
+    margin-top: 50px ;
+    margin-bottom: 50px;
+}
+#testimonial{
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 30px;
+}

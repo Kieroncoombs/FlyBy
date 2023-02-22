@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport"><!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+  </script>
+  <link href="styles.css" rel="stylesheet">
+  <title>fakebusiness</title>
+</head>
+
+<body>
+
+  <section id="head">
+
+    <link href="script.js" rel="script">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img alt="" class="d-inline-block align-text-top" height="50" src=
+        "images/FLYBYLOGO.png" width="200"></a> <button aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNavDropdown" data-bs-toggle=
+        "collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bolder active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="#">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="#">Pricing</a>
+            </li>
+            <li class="nav-item fw-bolder dropdown">
+              <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id=
+              "navbarDropdownMenuLink" role="button">More</a>
+              <ul aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item fw-bolder" href="#">About Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bolder" href="#">Help</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav sm-icons">
+            <li>
+              <a class="nav-link d-inline-block" href="#"><i class="bi bi-person" style=
+              "font-size: 2rem; color: azure;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </section>
+
+  <section id="banner">
+
+    <div class="carousel slide" data-bs-ride="carousel" id="hero">
+      <div class="carousel-indicators">
+        <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#hero" type="button"></button>
+        <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#hero" type="button"></button>
+        <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#hero" type="button"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img alt="..." class="d-block w-100 c-img" src="images/thl1.jpg">
+          <div class="carousel-caption top-0 mt-4 pt-5">
+            <p class="mt-5 fs-3 text-uppercase">Explore: Wat Mahathat Temple</p>
+            <h1 class="display-1 fw-bolder text-capitalize">FLYBY: Thailand</h1><button class=
+            "btn btn-danger px-4 py-2 fs-5 mt-5">Book Now</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img alt="..." class="d-block w-100 c-img" src="images/thl2.jpg">
+          <div class="carousel-caption top-0 mt-4 pt-5">
+            <p class="mt-5 fs-3 text-uppercase">Explore: Wat Arun</p>
+            <h1 class="display-1 fw-bolder text-capitalize">FLYBY: Thailand</h1><button class=
+            "btn btn-danger px-4 py-2 fs-5 mt-5">Book Now</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img alt="..." class="d-block w-100 c-img" src="images/thl3.jpg">
+          <div class="carousel-caption top-0 mt-4 pt-5">
+            <p class="mt-5 fs-3 text-uppercase">Explore: Khao Phing Kan</p>
+            <h1 class="display-1 fw-bolder text-capitalize">FLYBY: Thailand</h1><button class=
+            "btn btn-danger px-4 py-2 fs-5 mt-5">Book Now</button>
+          </div>
+        </div>
+      </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#hero" type=
+      "button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class=
+      "visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next"
+      data-bs-target="#hero" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span></button>
+    </div>
+
+    <script>
+
+                    $(window).scroll(function(){
+                      $('nav').toggleClass('scrolled', $(this).scrollTop() >= 600);
+                    });
+
+    </script>
+
+  </section>
+
+  <section id="icons">
+
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-md-4 mt-4 p-3 pt-md-1">
+          <i class="bi bi-airplane-fill display-5"></i>
+          <h3 class="fs-5 fw-normal text-uppercase pt-md-3 pt-2">Fly</h3>
+          <p>Proving you with reliable and affordable air travel. We take pride in offering quality service, modern
+          aircraft, and friendly staff. Travel with us and experience the difference that our commitment to safety,
+          service, and comfort makes.</p>
+        </div>
+        <div class="col-md-4 mt-4 p-3 pt-md-1">
+          <i class="bi bi-building display-5"></i>
+          <h3 class="fs-5 fw-normal text-uppercase pt-md-3 pt-2">Stay</h3>
+          <p>Affordable accommodation for travelers on a budget. Our accommodations range from budget hotels to hostel
+          living, and can accommodate any budget. With FlyBy, you can stay in comfortable and affordable accommodations
+          while exploring the world.</p>
+        </div>
+        <div class="col-md-4 mt-4 p-3 pt-md-1">
+          <i class="bi bi-heart-fill display-5"></i>
+          <h3 class="fs-5 fw-normal text-uppercase pt-md-3 pt-2">Explore</h3>
+          <p>We provide the perfect way to explore Thailand! Our experienced tour guides will lead you on an
+          unforgettable journey through Thailand's bustling cities, picturesque beaches, and breathtaking countryside.
+          Find your heart with FlyBy</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="cards">
+
+    <div class="container">
+      <h1 class="text-center fw-bolder pb-5">Tour Highlights</h1>
+      <p class="text-center pb-5
+      ">Ready to explore Thailand? Look no further than our "Top Destinations" section! We've carefully 
+      selected Bangkok as one of the must-see locations for travelers, featuring its fascinating blend of traditional and 
+      modern culture, mouth-watering cuisine, and breathtaking attractions. Discover the best things to do in <bold>Bangkok.</bold></p>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <img alt="" class="card-img-top" src="images/gdpalace.jpg" srcset="">
+            <div class="card-body">
+              <h5 class="card-title">The Grand Palace</h5>
+              <p class="car-text">This palace is a must-see for anyone visiting Bangkok, and today’s tour will give you
+              a chance to explore its many wonders. As we enter the palace, you’ll see the many temples, pavilions, and
+              gardens that make up the complex.</p><a class="btn btn-danger" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <img alt="" class="card-img-top" src="images/WkdMar.jpg" srcset="">
+            <div class="card-body">
+              <h5 class="card-title">Chatuchak Weekend Market</h5>
+              <p class="car-text">A bustling and lively shopping experience that spans across 35 acres and offers over
+              15,000 stalls to explore. From unique souvenirs and vintage clothing to exotic pets and antiques, this
+              market has it all. It can be overwhelming to navigate through the maze of alleyways and vendors, but the
+              amazing deals and treasures waiting to be discovered make it worth it.</p><a class="btn btn-danger" href=
+              "#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <img alt="" class="card-img-top" src="images/qnprk.jpg" srcset="">
+            <div class="card-body">
+              <h5 class="card-title">Queen Sirikit Park</h5>
+              <p class="car-text">A peaceful and scenic park in the heart of Bangkok. With a lake, gardens, walking
+              paths, and outdoor exercise equipment, Queen Sirikit Park is a great place to take a break, relax and
+              enjoy the natural beauty of the city.</p><a class="btn btn-danger" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="testimonial">
+
+    <h1 class="text-center pt-5 pb-5 fw-bolder">Still not sold? Check out our reviews!</h1>
+    <div class="carousel slide carousel-dark text-center" data-mdb-ride="carousel" id="carouselMultiItemExample">
+      <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselMultiItemExample" type=
+      "button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class=
+      "visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next"
+      data-bs-target="#carouselMultiItemExample" type="button"><span aria-hidden="true" class=
+      "carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+      <div class="carousel-inner py-4">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="rounded-circle shadow-1-strong mb-4" src=
+                "https://source.unsplash.com/random/150x150?sig=1">
+                <h5 class="mb-3">Tom Smith</h5>
+                <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4" src=
+                "https://source.unsplash.com/random/150x150?sig=2">
+                <h5 class="mb-3">John Doe</h5>
+                <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4" src=
+                "https://source.unsplash.com/random/150x150?sig=3">
+                <h5 class="mb-3">Maria Kate</h5>
+                <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> At vero eos et accusamus et iusto odio
+                dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="rounded-circle shadow-1-strong mb-4" src=
+                "https://source.unsplash.com/random/150x150?sig=4">
+                <h5 class="mb-3">Greg Patch</h5>
+                <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4" src=
+                "https://source.unsplash.com/random/150x150?sig=5">
+                <h5 class="mb-3">Alexa Rey</h5>
+                <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-half"></i></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4" src=
+                "https://source.unsplash.com/random/150x150?sig=6">
+                <h5 class="mb-3">Molly Thompson</h5>
+                <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> At vero eos et accusamus et iusto odio
+                dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="rounded-circle shadow-1-strong mb-4" src=
+                "https://source.unsplash.com/random/150x150?sig=7">
+                <h5 class="mb-3">Anna Deynah</h5>
+                <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4" src=
+                "https://source.unsplash.com/random/150x150?sig=8">
+                <h5 class="mb-3">Johnny T</h5>
+                <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-half"></i></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4" src=
+                "https://source.unsplash.com/random/150x150?sig=9">
+                <h5 class="mb-3">Sophia Turkman</h5>
+                <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> At vero eos et accusamus et iusto odio
+                dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+</body>
+</html>
