@@ -1,60 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 nav{
     transition: 0.3s ease-in-out;
 }
-
 nav.scrolled {
-    background-color: rgb(116, 160, 218);
+    background-color: rgb(255, 255, 255);
     transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    color: black;
+    
+  }
+.black-background {
+    background-color:rgb(0, 0, 0);
   }
 .c-item{
-   height: 80vh;
-
+   height: 90vh;
+   padding-bottom: 20px;
 }
+.carousel-caption{
+    padding-top: 6rem !important;
+}
+
 .c-img{
     height: 100%;
     object-fit:cover;
     filter: brightness(0.6);
 }
 #icons{
-    padding-top: 12px;
-    background: rgb(245, 245, 245)
+    padding-top: 20px;
+    background: rgb(245, 245, 245);
+    padding-left: 12px;
+    width: 98%;
+    border-radius: 25px;
 }
-.bi.bi-heart-fill.display-5{
+#Welcome{
+    margin-top: 20px ;
+    padding-bottom: 20px;
+}
+@media screen and (min-width: 1600px){
+    .w-100.img-fluid.pt-xl-1.pt-5{
+        width: 70%;
+        height: 60%;
+            
+     }
+     .space.ps-md-5.pt-5{
+        line-height: 2rem;
+     }
+}
 
-background-color: rgb(230, 159, 212);
-height: 200px;
-width: 200px;
-padding-top: 3px;
-padding-bottom: 3px;
-padding-left: 10px;
-padding-right: 10px;
-border-radius: 50%;
-}
-.bi.bi-building.display-5{
-    background-color: rgb(161, 236, 174);
-    height: 200px;
-    width: 200px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 50%;
-    }
-.bi.bi-airplane-fill.display-5{
-    background-color: rgb(156, 211, 224);
-    height: 200px;
-    width: 200px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 50%;
-}
+
+
 #cards{
-    margin-top: 50px ;
-    margin-bottom: 50px;
+    margin-top: 25px ;
+    margin-bottom: 25px;
+}
+#explore{
+    padding-bottom: 20px;
+    padding-top: 30px;
 }
 #testimonial{
     background-color: rgb(245, 245, 245);
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    padding-top: 22px; 
+}
+#Locations{
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.borderimg{
+    border-radius: 25px !important;
+
+}
+.btn{
+    border-radius: 50px;
+}
+#important{
+    background: url(images/backdrop.jpg);
+    padding-bottom: 50px;
+    background-size: cover;
+    width: 93%;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.card{
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#food {
+    padding-bottom: 20px;
+    padding-top: 20px; 
+}
+.borderimg{
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+}
+.bi.bi-person {
+    font-size: 1.5rem; 
+}
+.bi.bi-person.top{
+    color: rgb(255, 255, 255);
+}
+.bi.bi-person.bot{
+    color: rgb(0, 0, 0);
+}
+#hover{
+    transition: .5s ease-in-out;
+
+}
+#hover:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.05); 
+  filter: brightness(0.4);
+}
+.box
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    transition: .5s;
+    margin-bottom: 35px;
+}
+
+.box:hover
+{
+    transform: translateY(-30px);
+    box-shadow: 0 50px 50x rgba(0,0,0,.5);
+}
+
+.box .imgbox
+{
+    position: relative;
+}
+
+.box .imgbox img
+{
+    transition: .5s;
+}
+
+.box:hover .imgbox img
+{
+   opacity: .5;
+}
+
+.box .content
+{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    opacity: 0;
+    
+}
+
+.box:hover .content
+{
+    opacity: 1;
+    bottom: 0;
+}
+
+.box .content h3
+{
+    font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.box .content p
+{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.box .content .btnD
+{
+    border: none;
+    background: #ff0000;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.box .content .btnD:hover
+{
+    background: #ff3232;
+    
 }
